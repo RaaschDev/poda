@@ -1,0 +1,402 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<!-- Hero Section -->
+<section id="inicio" class="hero min-h-screen relative flex items-center bg-green-50">
+    <div class="absolute inset-0 opacity-10">
+        <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1920&q=80" 
+             alt="Árvores verdes" 
+             class="w-full h-full object-cover">
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+        <div class="flex flex-col items-center text-center">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-bold mb-4 text-green-800">
+                    Cuidando da Natureza com Excelência
+                </h1>
+                <p class="text-lg mb-8 text-green-700">
+                    Serviços profissionais de poda e corte de árvores para manter seu espaço seguro e bonito.
+                </p>
+                <a href="#contato" class="bg-green-600 hover:bg-green-700 text-white font-bold py-3 px-8 rounded-lg transition duration-300 inline-block">
+                    Solicite um Orçamento
+                </a>
+            </div>
+            
+        </div>
+    </div>
+</section>
+
+<!-- Services Section -->
+<section id="servicos" class="min-h-screen py-16 bg-white flex items-center">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Nossos Serviços</h2>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                <div class="text-green-600 text-4xl mb-4">
+                    <i class="fas fa-tree"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-green-800 mb-2">Poda de Árvores</h3>
+                <p class="text-green-700">Poda técnica e segura para manter a saúde e beleza das suas árvores.</p>
+                <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=400&q=80" 
+                     alt="Poda de árvores" 
+                     class="mt-4 rounded-lg w-full h-48 object-cover">
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                <div class="text-green-600 text-4xl mb-4">
+                    <i class="fas fa-cut"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-green-800 mb-2">Corte de Árvores</h3>
+                <p class="text-green-700">Remoção segura e profissional de árvores em qualquer local.</p>
+                <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=400&q=80" 
+                     alt="Corte de árvores" 
+                     class="mt-4 rounded-lg w-full h-48 object-cover">
+            </div>
+            <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                <div class="text-green-600 text-4xl mb-4">
+                    <i class="fas fa-leaf"></i>
+                </div>
+                <h3 class="text-xl font-semibold text-green-800 mb-2">Manutenção</h3>
+                <p class="text-green-700">Cuidados regulares para manter seu jardim sempre bonito e saudável.</p>
+                <img src="https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=400&q=80" 
+                     alt="Manutenção de jardim" 
+                     class="mt-4 rounded-lg w-full h-48 object-cover">
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Why Choose Us Section -->
+<section id="portfolio" class="min-h-screen py-16 bg-green-50 relative flex items-center">
+    <div class="absolute inset-0 opacity-10">
+        <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=1920&q=80" 
+             alt="Background" 
+             class="w-full h-full object-cover">
+    </div>
+    <div class="container mx-auto px-4 relative z-10">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-12">Por que nos escolher?</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mb-16">
+            <div class="flex items-start bg-white p-6 rounded-lg shadow-md">
+                <div class="text-green-600 text-2xl mr-4">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-green-800 mb-2">Profissionais Qualificados</h3>
+                    <p class="text-green-700">Equipe treinada e experiente em todos os tipos de serviços.</p>
+                </div>
+            </div>
+            <div class="flex items-start bg-white p-6 rounded-lg shadow-md">
+                <div class="text-green-600 text-2xl mr-4">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold text-green-800 mb-2">Segurança Garantida</h3>
+                    <p class="text-green-700">Trabalhamos com equipamentos de segurança e seguimos todas as normas.</p>
+                </div>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-center text-green-800 mb-8">Nossos Diferenciais</h3>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mb-16">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <i class="fas fa-clock text-4xl text-green-600 mb-4"></i>
+                <h4 class="text-lg font-semibold text-green-800 mb-2">Agilidade</h4>
+                <p class="text-green-700">Atendimento rápido e eficiente para todas as suas necessidades.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <i class="fas fa-tools text-4xl text-green-600 mb-4"></i>
+                <h4 class="text-lg font-semibold text-green-800 mb-2">Equipamentos Modernos</h4>
+                <p class="text-green-700">Utilizamos as melhores ferramentas e equipamentos do mercado.</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <i class="fas fa-leaf text-4xl text-green-600 mb-4"></i>
+                <h4 class="text-lg font-semibold text-green-800 mb-2">Sustentabilidade</h4>
+                <p class="text-green-700">Cuidamos do meio ambiente em todos os nossos serviços.</p>
+            </div>
+        </div>
+
+        <h3 class="text-2xl font-bold text-center text-green-800 mb-8">Números que nos Orgulham</h3>
+        <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="text-4xl font-bold text-green-600 mb-2">500+</div>
+                <p class="text-green-800">Projetos Concluídos</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="text-4xl font-bold text-green-600 mb-2">98%</div>
+                <p class="text-green-800">Clientes Satisfeitos</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="text-4xl font-bold text-green-600 mb-2">15+</div>
+                <p class="text-green-800">Anos de Experiência</p>
+            </div>
+            <div class="bg-white p-6 rounded-lg shadow-md text-center">
+                <div class="text-4xl font-bold text-green-600 mb-2">24/7</div>
+                <p class="text-green-800">Suporte Técnico</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Testimonials Section -->
+<section id="depoimentos" class="py-16 bg-white flex items-center">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-10">O que nossos clientes dizem</h2>
+        
+        <!-- Swiper -->
+        <div class="swiper testimonialSwiper">
+            <div class="swiper-wrapper">
+                <!-- Slide 1 -->
+                <div class="swiper-slide">
+                    <div class="bg-green-50 p-6 rounded-lg shadow-md h-full flex flex-col">
+                        <div class="flex items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=100&h=100&q=80" 
+                                 alt="Cliente" 
+                                 class="w-14 h-14 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-green-800">João Silva</h4>
+                                <p class="text-green-600">Residencial</p>
+                            </div>
+                        </div>
+                        <p class="text-green-700 italic flex-grow">"Excelente serviço! A equipe foi muito profissional e cuidadosa com a poda das árvores do meu jardim. Recomendo fortemente!"</p>
+                        <div class="mt-3 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="swiper-slide">
+                    <div class="bg-green-50 p-6 rounded-lg shadow-md h-full flex flex-col">
+                        <div class="flex items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?auto=format&fit=crop&w=100&h=100&q=80" 
+                                 alt="Cliente" 
+                                 class="w-14 h-14 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-green-800">Maria Santos</h4>
+                                <p class="text-green-600">Condomínio</p>
+                            </div>
+                        </div>
+                        <p class="text-green-700 italic flex-grow">"Serviço impecável! Realizaram a poda de várias árvores no nosso condomínio com muita segurança e organização."</p>
+                        <div class="mt-3 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="swiper-slide">
+                    <div class="bg-green-50 p-6 rounded-lg shadow-md h-full flex flex-col">
+                        <div class="flex items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=100&h=100&q=80" 
+                                 alt="Cliente" 
+                                 class="w-14 h-14 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-green-800">Pedro Oliveira</h4>
+                                <p class="text-green-600">Empresarial</p>
+                            </div>
+                        </div>
+                        <p class="text-green-700 italic flex-grow">"Profissionais muito competentes. Realizaram um excelente trabalho na manutenção do jardim da nossa empresa."</p>
+                        <div class="mt-3 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 4 -->
+                <div class="swiper-slide">
+                    <div class="bg-green-50 p-6 rounded-lg shadow-md h-full flex flex-col">
+                        <div class="flex items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=100&h=100&q=80" 
+                                 alt="Cliente" 
+                                 class="w-14 h-14 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-green-800">Ana Costa</h4>
+                                <p class="text-green-600">Residencial</p>
+                            </div>
+                        </div>
+                        <p class="text-green-700 italic flex-grow">"Atendimento excepcional! A equipe foi pontual, organizada e deixou meu jardim ainda mais bonito. Super recomendo!"</p>
+                        <div class="mt-3 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 5 -->
+                <div class="swiper-slide">
+                    <div class="bg-green-50 p-6 rounded-lg shadow-md h-full flex flex-col">
+                        <div class="flex items-center mb-3">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=100&h=100&q=80" 
+                                 alt="Cliente" 
+                                 class="w-14 h-14 rounded-full object-cover mr-4">
+                            <div>
+                                <h4 class="font-semibold text-green-800">Carlos Mendes</h4>
+                                <p class="text-green-600">Condomínio</p>
+                            </div>
+                        </div>
+                        <p class="text-green-700 italic flex-grow">"Excelente trabalho! A poda foi feita com muita precisão e cuidado. O jardim ficou perfeito!"</p>
+                        <div class="mt-3 text-yellow-400">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </div>
+</section>
+
+<!-- Completed Services Section -->
+<section class="py-12 bg-green-50 flex items-center">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-8">Serviços Concluídos</h2>
+        
+        {% if featured_services|length > 3 %}
+        <!-- Swiper -->
+        <div class="swiper completedServicesSwiper">
+            <div class="swiper-wrapper">
+                {% for service in featured_services %}
+                <div class="swiper-slide">
+                    <a href="{% url 'services:service_detail' service.slug %}" class="group relative overflow-hidden rounded-lg shadow-lg block">
+                        <img src="{% if service.image %}{{ service.image.url }}{% else %}https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=600&q=80{% endif %}" 
+                             alt="{{ service.name }}" 
+                             class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-110">
+                        <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                            <div class="absolute bottom-0 p-6 text-white">
+                                <h3 class="text-xl font-semibold mb-2">{{ service.name }}</h3>
+                                <p class="text-sm">{{ service.short_description }}</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                {% endfor %}
+            </div>
+            <div class="swiper-button-next text-green-600"></div>
+            <div class="swiper-button-prev text-green-600"></div>
+        </div>
+        <div class="swiper-pagination mt-6"></div>
+        {% else %}
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {% for service in featured_services %}
+            <a href="{% url 'services:service_detail' service.slug %}" class="group relative overflow-hidden rounded-lg shadow-lg block">
+                <img src="{% if service.image %}{{ service.image.url }}{% else %}https://images.unsplash.com/photo-1511497584788-876760111969?auto=format&fit=crop&w=600&q=80{% endif %}" 
+                     alt="{{ service.name }}" 
+                     class="w-full h-72 object-cover transition-transform duration-300 group-hover:scale-110">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <div class="absolute bottom-0 p-6 text-white">
+                        <h3 class="text-xl font-semibold mb-2">{{ service.name }}</h3>
+                        <p class="text-sm">{{ service.short_description }}</p>
+                    </div>
+                </div>
+            </a>
+            {% endfor %}
+        </div>
+        {% endif %}
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section id="contato" class="py-12 bg-white flex items-center">
+    <div class="container mx-auto px-4">
+        <h2 class="text-3xl font-bold text-center text-green-800 mb-8">Entre em Contato</h2>
+        <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center">
+            <!-- Formulário -->
+            <div class="bg-green-50 p-6 rounded-lg shadow-md">
+                <form class="space-y-4">
+                    <div>
+                        <label class="block text-green-700 mb-1" for="nome">Nome</label>
+                        <input type="text" id="nome" class="w-full px-4 py-2 border border-green-300 rounded-lg focus:outline-none focus:border-green-500">
+                    </div>
+                    <div>
+                        <label class="block text-green-700 mb-1" for="email">Email</label>
+                        <input type="email" id="email" class="w-full px-4 py-2 border border-green-300 rounded-lg focus:outline-none focus:border-green-500">
+                    </div>
+                    <div>
+                        <label class="block text-green-700 mb-1" for="mensagem">Mensagem</label>
+                        <textarea id="mensagem" rows="3" class="w-full px-4 py-2 border border-green-300 rounded-lg focus:outline-none focus:border-green-500"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-green-600 hover:bg-green-700 text-white font-bold py-2 px-8 rounded-lg transition duration-300">
+                        Enviar Mensagem
+                    </button>
+                </form>
+            </div>
+
+            <!-- Imagem - Hidden on mobile -->
+            <div class="hidden lg:block relative h-[400px] rounded-lg overflow-hidden shadow-lg">
+                <img src="https://images.unsplash.com/photo-1513836279014-a89f7a76ae86?auto=format&fit=crop&w=800&q=80" 
+                     alt="Serviços de jardinagem" 
+                     class="w-full h-full object-cover opacity-40">
+                <div class="absolute inset-0 bg-gradient-to-t from-black/80 via-black/50 to-transparent">
+                    <div class="absolute bottom-0 p-6 text-white">
+                        <h3 class="text-xl font-bold mb-2">Atendimento Personalizado</h3>
+                        <p class="text-base mb-4">Entre em contato conosco para um orçamento sem compromisso. Nossa equipe está pronta para atender suas necessidades.</p>
+                        <div class="flex items-center space-x-4">
+                            <div class="flex items-center">
+                                <i class="fas fa-phone text-green-400 mr-2"></i>
+                                <span>(11) 99999-9999</span>
+                            </div>
+                            <div class="flex items-center">
+                                <i class="fas fa-envelope text-green-400 mr-2"></i>
+                                <span>contato@podaexpress.com</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+{% block extra_js %}
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    {% if featured_services|length > 3 %}
+    new Swiper(".completedServicesSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop: true,
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false,
+        },
+        pagination: {
+            el: ".swiper-pagination",
+            clickable: true,
+        },
+        navigation: {
+            nextEl: ".completedServicesSwiper .swiper-button-next",
+            prevEl: ".completedServicesSwiper .swiper-button-prev",
+        },
+        breakpoints: {
+            640: {
+                slidesPerView: 2,
+            },
+            1024: {
+                slidesPerView: 3,
+            },
+        },
+    });
+    {% endif %}
+});
+</script>
+{% endblock %}
+{% endblock %} 
